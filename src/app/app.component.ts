@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  public menuUsuario= [{nombre:'menu1',url:'pag1'},{nombre:'menu2',url:'pag2'},{nombre:'menu3',url:'pag3'}];
 }

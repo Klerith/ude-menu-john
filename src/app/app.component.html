@@ -3,10 +3,13 @@
 
   <div class="col-md-5">
     <ul>
-      <li><a [routerLink]="['pag1']">Página 1</a></li>
-      <li><a [routerLink]="['pag2']">Página 2</a></li>
+      <li *ngFor="let item of menuUsuario">
+        <a [routerLink]="[ item.url ]"> {{ item.nombre }} </a>
+      </li>
+
+      <!-- <li><a [routerLink]="['pag2']">Página 2</a></li>
       <li><a [routerLink]="['pag3']">Página 3</a></li>
-      <li><a [routerLink]="['pag4']">Página 4</a></li>
+      <li><a [routerLink]="['pag4']">Página 4</a></li> -->
     </ul>
   </div>
 
